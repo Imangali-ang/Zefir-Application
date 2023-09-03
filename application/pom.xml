@@ -9,9 +9,16 @@
         <version>3.1.1</version>
         <relativePath/>
     </parent>
+
     <groupId>org.zefir</groupId>
-    <artifactId>Zefir-Application</artifactId>
+    <artifactId>zefir-application</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>models</module>
+        <module>core</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
