@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="add docker compose files">
-      <change afterPath="$PROJECT_DIR$/application/core/src/main/resources/db/changelog/create_tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/core/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="add DB manager">
       <change beforePath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +68,11 @@
     "settings.editor.selected.configurable": "project.scopes",
     "spring.configuration.checksum": "76237452ade8e84588a9381fef6ecb81",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -172,7 +173,7 @@
       <updated>1693722772683</updated>
       <workItem from="1693722773849" duration="3153000" />
       <workItem from="1693726477784" duration="10000" />
-      <workItem from="1693726509637" duration="5869000" />
+      <workItem from="1693726509637" duration="6131000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1693723368266</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693730255726</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add DB manager">
+      <created>1693732774151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693732774151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +231,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="reorganize" />
     <MESSAGE value="add docker compose files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker compose files" />
+    <MESSAGE value="add DB manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DB manager" />
   </component>
 </project>
