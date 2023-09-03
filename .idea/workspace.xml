@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="reorganize">
-      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/repository/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/repository/src/main/java/com/zefir/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.19433594",
     "project.structure.side.proportion": "0.40169904",
     "settings.editor.selected.configurable": "project.scopes",
@@ -127,7 +123,7 @@
       <updated>1693722772683</updated>
       <workItem from="1693722773849" duration="3153000" />
       <workItem from="1693726477784" duration="10000" />
-      <workItem from="1693726509637" duration="1960000" />
+      <workItem from="1693726509637" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1693723368266</created>
@@ -143,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693727651126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="reorganize">
+      <created>1693728641421</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693728641421</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

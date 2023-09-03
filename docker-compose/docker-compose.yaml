@@ -1,0 +1,23 @@
+version: '3'
+services:
+  redis:
+    image: "redis:3.0.6"
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres:13-alpine
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+  rabbitmq-stomp:
+    image: "jorgeacetozi/rabbitmq-stomp:3.6"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "61613:61613"
