@@ -19,7 +19,6 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue
     private UUID id;
     private String email;
     private String name;
