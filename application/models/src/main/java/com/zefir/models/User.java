@@ -1,15 +1,15 @@
 package com.zefir.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -21,11 +21,12 @@ public class User {
     @Id
     private UUID id;
     private String email;
-    private String name;
+
+    private String userName;
     private Boolean online;
 
     private Boolean blocked;
-    private LocalDateTime createdDate;
+    private LocalDateTime created;
     private LocalDateTime lastConnection;
     @Enumerated(EnumType.STRING)
     private UserRole userRole;
