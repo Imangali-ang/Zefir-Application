@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/application/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/dddd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/exception/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/exceptions/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/models/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/models/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/repository/src/main/java" charset="UTF-8" />

@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="add DB manager">
+    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="finish Auth">
+      <change afterPath="$PROJECT_DIR$/application/exceptions/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/exceptions/src/main/java/com/zefir/exception/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/HttpStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/ZefirApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/ZefirApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/service/impl/AuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +68,6 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_opened_file_path": "/Users/imangalikaliahmetov/IdeaProjects/Zefir-Application",
@@ -65,8 +78,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.19433594",
     "project.structure.side.proportion": "0.40169904",
-    "settings.editor.selected.configurable": "project.scopes",
-    "spring.configuration.checksum": "76237452ade8e84588a9381fef6ecb81",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "427183135c1a4bcf95946e08b5c8ad26",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -103,7 +116,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -173,7 +188,12 @@
       <updated>1693722772683</updated>
       <workItem from="1693722773849" duration="3153000" />
       <workItem from="1693726477784" duration="10000" />
-      <workItem from="1693726509637" duration="6131000" />
+      <workItem from="1693726509637" duration="9317000" />
+      <workItem from="1694943489852" duration="13991000" />
+      <workItem from="1695536255551" duration="12733000" />
+      <workItem from="1695747838961" duration="1120000" />
+      <workItem from="1695748966772" duration="1522000" />
+      <workItem from="1695750504734" duration="1981000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1693723368266</created>
@@ -210,7 +230,56 @@
       <option name="project" value="LOCAL" />
       <updated>1693732774151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working project">
+      <created>1693733018746</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693733018746</updated>
+    </task>
+    <task id="LOCAL-00007" summary="user model">
+      <created>1694943970760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694943970760</updated>
+    </task>
+    <task id="LOCAL-00008" summary="user repository">
+      <created>1694944202704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694944202704</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding for User block field">
+      <created>1694945779060</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694945779060</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Jwt config">
+      <created>1694946053849</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694946053849</updated>
+    </task>
+    <task id="LOCAL-00011" summary="SecurityConfig">
+      <created>1694959971518</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694959971518</updated>
+    </task>
+    <task id="LOCAL-00012" summary="finish Auth">
+      <created>1695551019641</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695551019641</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +301,29 @@
     <MESSAGE value="reorganize" />
     <MESSAGE value="add docker compose files" />
     <MESSAGE value="add DB manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DB manager" />
+    <MESSAGE value="working project" />
+    <MESSAGE value="user model" />
+    <MESSAGE value="user repository" />
+    <MESSAGE value="adding for User block field" />
+    <MESSAGE value="Jwt config" />
+    <MESSAGE value="SecurityConfig" />
+    <MESSAGE value="finish Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish Auth" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/exceptions/src/main/java/com/zefir/exception/ApiExceptionHandler.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/exceptions/src/main/java/com/zefir/exception/ApiExceptionHandler.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

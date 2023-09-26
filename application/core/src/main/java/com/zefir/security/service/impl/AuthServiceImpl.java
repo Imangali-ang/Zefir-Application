@@ -4,6 +4,8 @@ import com.zefir.models.EmailCode;
 import com.zefir.models.User;
 import com.zefir.models.dto.Email;
 import com.zefir.models.dto.ReceiveOpt;
+import com.zefir.models.exception.ApiError;
+import com.zefir.models.exception.ApiException;
 import com.zefir.repository.EmailCodeRepository;
 import com.zefir.repository.UserRepository;
 import com.zefir.security.service.AuthService;
@@ -14,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 //TODO: validation
 @Service
@@ -37,16 +38,16 @@ public class AuthServiceImpl implements AuthService {
         emailCodeRepository.save(emailCode);
     }
 
-    //TODO: add ExceptionHandling Module
+
     @Override
     public User getUserFromOpt(ReceiveOpt receiveOpt) {
         EmailCode emailCode = emailCodeRepository.findEmailCodeByEmail(receiveOpt.getEmail())
-                .orElseThrow(()-> new SecurityException("can't find email by code"));
+                .orElseThrow(()-> new ApiException(ApiError.FORBIDDEN , "can't find email code"));
         if(!emailCode.getCode().equals(receiveOpt.getCode())){
             return null;
         }
         User user = userRepository.findByEmail(emailCode.getEmail())
-                .orElseThrow(()-> new SecurityException("can't find user by email"));
+                .orElseThrow(()-> new ApiException(ApiError.RESOURCE_NOT_FOUND , "can't find user by email"));
         return user;
     }
 

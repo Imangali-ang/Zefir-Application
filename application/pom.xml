@@ -19,6 +19,7 @@
         <module>models</module>
         <module>core</module>
         <module>repository</module>
+        <module>exceptions</module>
     </modules>
 
     <properties>
