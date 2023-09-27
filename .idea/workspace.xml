@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="finish Auth">
-      <change afterPath="$PROJECT_DIR$/application/exceptions/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/exceptions/src/main/java/com/zefir/exception/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/src/main/java/com/zefir/models/exception/HttpStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dbe31fb5-2dfe-482b-bb01-7ada3bdcf3bf" name="Changes" comment="adding exception handling library">
+      <change afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/websocket/config/RawWebSocketConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/websocket/handler/MyRawWebSocketHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/ZefirApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/ZefirApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/src/main/java/com/zefir/security/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,34 +51,34 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/imangalikaliahmetov/IdeaProjects/Zefir-Application",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.19433594",
-    "project.structure.side.proportion": "0.40169904",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "427183135c1a4bcf95946e08b5c8ad26",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/imangalikaliahmetov/IdeaProjects/Zefir-Application&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.19433594&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.40169904&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0f8ce9038b961acde1a02dc21a3c755d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application" />
@@ -193,7 +184,9 @@
       <workItem from="1695536255551" duration="12733000" />
       <workItem from="1695747838961" duration="1120000" />
       <workItem from="1695748966772" duration="1522000" />
-      <workItem from="1695750504734" duration="1981000" />
+      <workItem from="1695750504734" duration="5265000" />
+      <workItem from="1695790988505" duration="98000" />
+      <workItem from="1695838387760" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1693723368266</created>
@@ -279,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695551019641</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding exception handling library">
+      <created>1695752533323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695752533324</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +308,8 @@
     <MESSAGE value="Jwt config" />
     <MESSAGE value="SecurityConfig" />
     <MESSAGE value="finish Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish Auth" />
+    <MESSAGE value="adding exception handling library" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding exception handling library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
