@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebS
         http
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .antMatchers("/rawwebsocket/**").permitAll()
+                                .antMatchers("/websocket/**").permitAll()
                                 .antMatchers("/api/login/**").permitAll()
                                 .antMatchers("/api/user/**").hasRole("USER")
                                 .antMatchers("/api/admin/**").hasRole("ADMIN")
@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebS
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(myRawWebSocketHandler(), "/rawwebsocket")
+        registry.addHandler(myRawWebSocketHandler(), "/websocket")
                 .addInterceptors(new HttpSessionHandshakeInterceptor());
     }
 
